@@ -1,0 +1,16 @@
+/*BASE*/
+@import "./base/reset" ;
+@import "./base/body";
+@import "./base/typo";
+
+
+/*LAYOUT*/
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/_main.scss";
+
+
+/*MEDIAS*/
+
+@import "./layout/medias/header-media";
+@import "./layout/medias/footer-media";

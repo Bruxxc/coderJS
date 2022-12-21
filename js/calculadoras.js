@@ -36,7 +36,7 @@ function elegirOperacion(){
     7-Primos entre dos numeros
     8-Descomponer en primos
     9-Modo Calculadora
-    x-Cerrar Sesión`);
+    x-Salir`);
 
 }
 
@@ -47,8 +47,6 @@ function sumar(){
     const b=parseInt(prompt("Ingrese el segundo número"));
     alert(`El resultado es: ${a+b}`);
 }
-
-
 /*RESTAR*/
 
 function restar(){
@@ -259,16 +257,16 @@ function calculadora(){
 
 
 //** ----->>> PROGRAMA PRINCIPAL <<<----- **/
-var salir = false;
+// var salir = false;
 
 //**INGRESAR**//
 
 
-while(!salir){
+// while(!salir){
 
-    let usuario=prompt("Ingrese su usuario");
-    let constraseña=prompt("Ingrese su constraseña");
-    alert(`BIENVENIDO ${usuario}`);
+    // let usuario=prompt("Ingrese su usuario");
+    // let constraseña=prompt("Ingrese su constraseña");
+    // alert(`BIENVENIDO ${usuario}`);
 
     let bucle = true;
 
@@ -353,4 +351,5 @@ while(!salir){
     }
 
 
-}
+// }
+

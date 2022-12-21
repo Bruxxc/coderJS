@@ -1,0 +1,124 @@
+header{
+    width:100%;
+    color: aliceblue;
+    border-bottom: solid #f7f0e1 2px;
+    background-color: rgb(244, 81,81);
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 8fr 1fr;
+    grid-template-areas: "logo title nav_mobile user";
+    column-gap: 10px;
+    align-items: center;
+    justify-items: center;
+    padding-left: 5px;
+    padding-top: 5px;
+
+}
+
+.header_logo{
+    width: 80px;
+    height: 80px;
+    border:solid aliceblue;
+    border-radius: 50%;
+    &:hover{
+        background-color:#D5A021;
+        border:#D5A021;
+        filter:drop-shadow(0px 0px 3px #D5A021);
+    }
+}
+
+.logo_a{
+    grid-area: logo;
+    width: fit-content;
+    height: fit-content;
+}
+
+.header_title{
+    grid-area: title;
+    justify-self: start;
+}
+
+nav{
+    justify-self: end;
+    ul{
+        display: flex;
+        column-gap: 20px;
+        li{
+            list-style-type: none;
+            a{
+            color:aliceblue;
+            text-decoration: none;
+            &:hover{
+                color:#D5A021;
+            }
+
+            }
+
+        }
+    }
+}
+
+.nav_lista{
+    grid-area:nav;
+}
+
+.mobile_menu {
+    grid-area: nav_mobile;
+    list-style-type: none;
+    display: none;
+    margin-right: 20px;
+}
+
+
+
+.container_barrita{
+    display: grid;
+}
+
+.barra_menu {
+    width: 35px;
+    height: 35px;
+    justify-self: center;
+    &:hover{
+        filter:drop-shadow(0px 0px 3px #D5A021);
+    }
+
+}
+
+
+.mobile_submenu{
+    display: grid;
+    justify-items: center;
+}
+
+.nav_mobile{
+    width: 150px;
+    margin-top: 35px;
+    position: absolute;
+    display: none;
+}
+
+/*DESPLEGABLE*/
+.nav_mobile li {
+    background-color: rgba(188, 41, 41, 0.864);
+    border:solid #D5A021 1px;
+    list-style: none;
+    text-align: center;
+    color: aliceblue;
+    height: 35px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.header_log{
+    grid-area: user;
+}
+
+.header_user{
+    height: 50px;
+    width: 50px;
+    &:hover{
+        filter: drop-shadow(0px 0px 5px #D5A021);
+    }
+}
