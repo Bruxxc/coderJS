@@ -88,7 +88,7 @@ function elegirOperacion(){
 
 let p1= new PreguntaMO("¿Cuál es el área de un cuadrado de 4 de lado?",12,10,18,16,"d");
 let p2= new PreguntaR("Calcule el área de un triángulo equilátero de 6 de lado",9);
-let p3= new PreguntaR("Calcule el perímetro de un rectángulo de base=16 y altura=10",160);
+let p3= new PreguntaR("Calcule el perímetro de un rectángulo de base=16 y altura=10",52);
 let p4= new PreguntaMO("¿Cómo se llama el lado de mayor longitud de un triángulo rectángulo?","lado adyacente","lado opuesto", "hipotenusa", "hipotensia","c");
 let p5= new PreguntaMO("En un triángulo rectángulo se conocen la medida de la hipotenusa:5 y de uno de sus lados:3. ¿Cuál es la medida del lado restante?", 2,3,4,5,"c");
 let p6= new PreguntaMO("¿Cuál es el área de un círculo de 5.5 de radio?",17.3,16.5,17.9,15.7,"a");
