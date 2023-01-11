@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <style> @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap'); </style>
     <link rel="stylesheet" href="../css/style.css">
-    <title>CONTACTO</title>
+    <title>BASE</title>
 </head>
 <body>
     <header>
@@ -67,8 +67,18 @@
     </header>
 
     
-    <main>
-        <p>PROXIMAMENTE</p>
+    <main class="login_main">
+
+        <form class="login_formulario" action="">
+            <p>INICIAR SESIÓN</p>
+            <fieldset>
+                <label class="form_element">Usuario<input class="input_usuario" type="text" name="usuario"></label>
+                <label class="form_element">Contraseña<input class="input_contraseña" type="password" name="contraseña"></label>
+                <label class="pconectado">Permanecer conectado <input class="input_npconectado" type="checkbox"></label>
+                <img class="flecha_form flecha_login" src="../assets/img/flecha_login.png" alt="">
+            </fieldset>
+        </form>
+
     </main>
 
 
@@ -82,5 +92,6 @@
         </ul>
     </footer>
     <script src="../js/menu.js"></script>
+    <script src="../js/login.js"></script>
 </body>
 </html>

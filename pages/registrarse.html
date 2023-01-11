@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <style> @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap'); </style>
     <link rel="stylesheet" href="../css/style.css">
-    <title>CALCULADORAS</title>
+    <title>BASE</title>
 </head>
 <body>
     <header>
@@ -20,8 +20,6 @@
             <ul class="nav_lista">
 
                 <li><a href="../index.html">INICIO</a></li>
-
-                <li><a href="./calculadoras.html">CALCULADORAS</a></li>
                 
                 <li><a href="./geometria.html">GEOMETRÍA</a></li>
 
@@ -41,8 +39,6 @@
                     <ul class="nav_mobile">                
 
                         <li><a href="../index.html">INICIO</a></li>
-                        
-                        <li><a href="./calculadoras.html">CALCULADORAS</a></li>
 
                         <li><a href="./geometria.html">GEOMETRÍA</a></li>
             
@@ -61,13 +57,29 @@
         
         <div class="header_log">
             <img class="header_user" src="../assets/img/user.png" alt="">
+            <ul class="log_menu">
+                <li><a href="./login.html">INICIAR SESIÓN</a></li>
+                <li><a href="./registrarse.html">REGISTRARSE</a></li>
+            </ul>
+            <p class="header_name"></p>
         </div>
 
     </header>
 
     
-    <main>
-        <p>PROXIMAMENTE</p>
+    <main class="registrarse_main">
+
+        <form class="registrarse_formulario" action="">
+            <p>REGISTRARSE</p>
+            <fieldset>
+                <label class="form_element">Email<input class="input_email" type="email" name="email"></label>
+                <label class="form_element">Usuario<input class="input_usuario" type="text" name="usuario"></label>
+                <label class="form_element">Contraseña<input class="input_contraseña" type="password" name="contraseña"></label>
+                <label class="form_element">Repetir Contraseña <input class="input_contraseña_rep" type="password" name="rep_contraseña"></label>
+                <img class="flecha_form flecha_registrarse" src="../assets/img/flecha_login.png" alt="">
+            </fieldset>
+        </form>
+
     </main>
 
 
@@ -80,7 +92,7 @@
             <li><img class="footer_img_redes" src="../assets/img/icons/whatsapp.png" alt=""></li>
         </ul>
     </footer>
-
-    <script src="../js/calculadoras.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/registrarse.js"></script>
 </body>
 </html>

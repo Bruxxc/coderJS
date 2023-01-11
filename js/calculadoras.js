@@ -288,7 +288,7 @@ function calculadora(){
                 multiplicar();
                 break;
             }
-            case "4":{
+            case "4":{+
                 dividir();
                 break;
             }

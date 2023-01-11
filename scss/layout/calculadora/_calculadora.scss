@@ -1,0 +1,127 @@
+.aux_calc{
+    position:fixed;
+    z-index: 4000;
+    display: none;
+    justify-self: start;
+    align-self: start;
+}
+
+.aux_calc_img{
+    width: 50px;
+    height: 50px;
+    filter:drop-shadow(0px 0px 3px rgb(53, 12, 3));
+    &:hover{
+        filter:contrast(1.75);
+    }
+}
+
+.aux_calc_interfaz{
+    width: 300px;
+    height: 400px;
+    padding-top: 10px;
+    border-radius: 3%;
+    border: solid 1px #D5A021;
+    background: #D5A021;
+    box-shadow: 0px 0px 5px rgb(53, 12, 3);
+    justify-items: center;
+    display: none;
+    background-image: url("../assets/img/MF_no_bg.png");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position-y:60px;
+
+}
+
+.calc_pantalla{
+    width: 90%;
+    height: 70px;
+    border:solid #EDE7D9;
+    border-radius: 5%;
+    background-color: #EDE7D9;
+    box-shadow: 0px 0px 3px rgb(53, 12, 3);
+    display: grid;
+    align-items: center;
+    justify-items: end;
+    font-size: 26px;
+    overflow: auto;
+}
+
+.calc_teclado{
+    align-self: flex-start;
+    width: 280px;
+    height: 250px;
+    display: grid;
+    grid-template-areas: 
+    "numeros operaciones"
+    "funciones funciones";
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 20px;
+
+
+}
+
+.calc_boton{
+    width: 30px;
+    height: 30px;
+    border-radius: 20%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    color:aliceblue;
+    background-color: #DB162F;
+    box-shadow: 0px 0px 3px rgb(53, 12, 3);
+    &:hover{
+        color:#D5A021;
+        cursor: pointer;
+    }
+}
+
+.calc_numeros{
+    grid-area: numeros;
+    display: grid;
+    justify-self: start;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    list-style: none;
+
+}
+
+.calc_operaciones{
+    grid-area:operaciones;
+    justify-self: end;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.calc_funciones{
+    grid-area:funciones;
+    display: grid;
+    justify-items: center;
+    list-style-type: none;
+    row-gap: 10px;
+}
+
+
+
+.calc_funcion{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 12%;
+}
+
+
+.input_raices{
+    width: 40px;
+}
+
+.desbordado{
+    font-size: 10px;
+    align-items: center;
+}

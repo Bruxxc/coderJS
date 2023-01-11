@@ -1,11 +1,10 @@
 header{
     width:100%;
     color: aliceblue;
-    border-bottom: solid #f7f0e1 2px;
     background-color: rgb(244, 81,81);
     height: 100px;
     display: grid;
-    grid-template-columns: 1fr 3fr 8fr 1fr;
+    grid-template-columns: 1fr 3fr 8fr 2fr;
     grid-template-areas: "logo title nav_mobile user";
     column-gap: 10px;
     align-items: center;
@@ -79,9 +78,6 @@ nav{
     width: 35px;
     height: 35px;
     justify-self: center;
-    &:hover{
-        filter:drop-shadow(0px 0px 3px #D5A021);
-    }
 
 }
 
@@ -93,14 +89,14 @@ nav{
 
 .nav_mobile{
     width: 150px;
-    margin-top: 35px;
+    margin-top: 64px;
     position: absolute;
     display: none;
 }
 
 /*DESPLEGABLE*/
 .nav_mobile li {
-    background-color: rgba(188, 41, 41, 0.864);
+    background-color: rgba(202, 52, 52, 0.845);
     border:solid #D5A021 1px;
     list-style: none;
     text-align: center;
@@ -113,12 +109,59 @@ nav{
 
 .header_log{
     grid-area: user;
+    justify-self: center;
+    display: grid;
+    justify-items: center;
+    height: 52px;
 }
 
 .header_user{
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     &:hover{
         filter: drop-shadow(0px 0px 5px #D5A021);
+    }
+}
+
+
+.header_name{
+    font-size: smaller;
+    position: absolute;
+    align-self: end;
+    color:#f7f0e1;
+}
+
+.log_menu{
+    margin-top: 72px;
+    position: absolute;
+    list-style: none;
+    justify-self: center;
+    font-size: small;
+    display: none;
+
+
+    li{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        height: 25px;
+        width: 75px;
+        background-color: rgba(202, 52, 52, 0.845);
+        border:solid #D5A021 1px;
+        a{
+            text-decoration: none;
+            color: aliceblue;
+            &:hover{
+                color:#D5A021;
+            }
+        }
+    }
+
+}
+
+.cerrar_sesion{
+    &:hover{
+        color:#D5A021;
+        cursor:pointer;
     }
 }

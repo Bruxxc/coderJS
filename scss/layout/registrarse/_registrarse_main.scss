@@ -1,0 +1,23 @@
+.registrarse_main{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.registrarse_formulario{
+    display: grid;
+    justify-items: center;
+    width: 400px;
+    height: 350px;
+    background-color: #bee5bf;
+    box-shadow: #0D160B 0px 0px 10px;
+    p{
+        color:#d58a21
+    }
+    fieldset{
+        height: 300px;
+        width: inherit;
+        display: grid;
+        border:none;
+    }
+}

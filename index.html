@@ -20,8 +20,6 @@
             <ul class="nav_lista">
 
                 <li><a href="index.html">INICIO</a></li>
-                        
-                <li><a href="./pages/calculadoras.html">CALCULADORAS</a></li>
 
                 <li><a href="./pages/geometria.html">GEOMETRÍA</a></li>
 
@@ -41,8 +39,6 @@
 
                         <li><a href="index.html">INICIO</a></li>
                         
-                        <li><a href="./pages/calculadoras.html">CALCULADORAS</a></li>
-
                         <li><a href="./pages/geometria.html">GEOMETRÍA</a></li>
             
                         <li><a href="./pages/examenes.html">EXÁMENES</a></li>
@@ -60,12 +56,65 @@
         
         <div class="header_log">
             <img class="header_user" src="./assets/img/user.png" alt="">
+            <ul class="log_menu">
+                <li><a href="./pages/login.html">INICIAR SESIÓN</a></li>
+                <li><a href="./pages/registrarse.html">REGISTRARSE</a></li>
+            </ul>
         </div>
 
     </header>
 
     
     <main>
+        <div class="aux_calc">
+            <img class="aux_calc_img" src="./assets/img/calculadora.png" alt="">
+            <div class="aux_calc_interfaz">
+                <div class="calc_pantalla">0</div>
+                <div class="calc_teclado">
+
+                    <ul class="calc_numeros">
+                        <li class="calc_boton boton_numero">0</li>
+                        <li class="calc_boton boton_numero">1</li>
+                        <li class="calc_boton boton_numero">2</li>
+                        <li class="calc_boton boton_numero">3</li>
+                        <li class="calc_boton boton_numero">4</li>
+                        <li class="calc_boton boton_numero">5</li>
+                        <li class="calc_boton boton_numero">6</li>
+                        <li class="calc_boton boton_numero">7</li>
+                        <li class="calc_boton boton_numero">8</li>
+                        <li class="calc_boton boton_numero">9</li>
+                        <li class="calc_boton boton_punto">.</li>
+                        <li class="calc_boton boton_elevar">^</li>
+                    </ul>
+
+                    <ul class="calc_operaciones">
+                        <li class="calc_boton boton_borrar">DEL</li>
+                        <li class="calc_boton boton_reiniciar">AC</li>
+                        <li class="calc_boton boton_multiplicar">X</li>
+                        <li class="calc_boton boton_dividir">/</li>
+                        <li class="calc_boton boton_sumar">+</li>
+                        <li class="calc_boton boton_restar">-</li>
+                        <li class="calc_boton boton_modulo">%</li>
+                        <li class="calc_boton boton_igual">=</li>
+                        <li class="calc_boton desbordado boton_sqrt">sqrt</li>
+                        <li class="calc_boton desbordado boton_sin">sin</li>
+                        <li class="calc_boton desbordado boton_cos">cos</li>
+                        <li class="calc_boton desbordado boton_tan">tan</li>
+                        <li class="calc_boton desbordado boton_sqr">sqr</li>
+                        <li class="calc_boton desbordado boton_asin">asin</li>
+                        <li class="calc_boton desbordado boton_acos">acos</li>
+                        <li class="calc_boton desbordado boton_atan">atan</li>
+                    </ul>
+
+                    <ul class="calc_funciones">
+                        <li class="calc_funcion calc_boton calc_primo">DESCOMPONER EN PRIMOS</li>
+                        <li class="calc_funcion calc_boton calc_raices">CALCULAR RAICES</li>
+                        <li><input class="input_raices x2" type="number">x^2 <input class="input_raices x1" type="number">x <input class="input_raices x0" type="number">x^0</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
         <p>PROXIMAMENTE</p>
     </main>
 
@@ -80,6 +129,6 @@
         </ul>
     </footer>
 
-    <script src="./js/login.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
