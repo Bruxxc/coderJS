@@ -1,0 +1,155 @@
+.examenes_main{
+    display: grid;
+}
+
+.examenes_section{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.examenes_container{
+    background-color: rgb(244, 81,81);
+    width: 300px;
+    height: 420px;
+    box-shadow: 0px 0px 7px #0D160B;
+    display: grid;
+    justify-items: center;
+}
+
+.examenes_title{
+    color:#ede7d9;
+}
+
+
+.examenes_subcontainer{
+    width: 260px;
+    height: 360px;
+    border:solid black;
+    background-color: rgba(107, 30, 30, 0.864);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.examen{
+    width: 255px;
+    height: 50px;
+    border:solid black 1px;
+    border-left: none;
+    border-right:none;
+    background-color: #ede7d9;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    align-items: center;
+
+    p{
+        color:#D5A021;
+        justify-self: start;
+        padding-left: 5px;
+    }
+}
+
+.nota_examen{
+    width: 40px;
+    height: 30px;
+    color:#0D160B !important;
+    border:solid #c4b729;
+}
+
+.boton_iniciar{
+    width: 35px;
+    height: 35px;
+    justify-self: end;
+    padding-right: 5px;
+    cursor:pointer;
+    &:hover{
+        filter:drop-shadow(0px 0px 5px #D5A021);
+    }
+}
+
+.examenes_subcontainer::-webkit-scrollbar {
+    width: 8px;
+}
+  
+  
+.examenes_subcontainer::-webkit-scrollbar-thumb {
+    background-color: rgba(244, 81, 81, 0.623);
+    border-radius: 20px;
+    border: 2px solid rgba(255, 166, 0, 0.379);
+}
+  
+.container_blur{
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+
+.hoja_examenes{
+    width: 500px;
+    height: 550px;
+    border:solid black 1px;
+    justify-self: center;
+    align-self: center;
+    background-color: #bee5bf;
+    box-shadow: 0px 0px 5px #0D160B;
+    display: grid;
+    padding-bottom: 10px;
+}
+
+.examen_cerrar{
+    justify-self: end;
+    align-self: start;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(244, 81, 81, 0.623);
+    border:none;
+    border-radius: 15%;
+    &:hover{
+        background-color:#D5A021;
+        cursor:pointer;
+    }
+}
+
+.hoja_preguntas{
+    width: 450px;
+    height: 450px;
+    border:solid #D5A021 1px;
+    background-color: #ede7d9;
+    justify-self: center;
+    overflow: auto;
+}
+
+
+.examen_entregar{
+    border:none;
+    border-radius: 10%;
+    background-color:#D5A021;
+    justify-self: center;
+    align-self: flex-end;
+    width: 80px;
+    height: 30px;
+    &:hover{
+        background-color: #0c7b10;
+        cursor:pointer;
+    }
+}
+
+.preguntaGEN{
+    width: 100%;
+    border:solid black 1px;
+    height: fit-content;
+    text-align: center;
+}
+
+.pregunta_respuesta_texto{
+    display: grid;
+    input{
+        justify-self: center;
+    }
+}

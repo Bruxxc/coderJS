@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+    </style>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>EXÁMENES</title>
+  </head>
+  <body>
+    <header>
+      <a href="../index.html" class="logo_a"
+        ><img class="header_logo" src="../assets/img/MF_logo.png" alt="MF_logo"
+      /></a>
+
+      <h1 class="header_title">MATHFAST</h1>
+
+      <nav>
+        <ul class="nav_lista">
+          <li><a href="../index.html">INICIO</a></li>
+
+          <li><a href="./geometria.html">GEOMETRÍA</a></li>
+
+          <li><a href="./examenes.html">EXÁMENES</a></li>
+
+          <li><a href="./contacto.html">CONTACTO</a></li>
+        </ul>
+
+        <ul class="mobile_menu">
+          <li class="mobile_submenu">
+            <div class="container_barrita">
+              <img
+                class="barra_menu"
+                src="../assets/img/icons/menu.png"
+                alt="barra desplegable"
+              />
+            </div>
+
+            <ul class="nav_mobile">
+              <li><a href="../index.html">INICIO</a></li>
+
+              <li><a href="./geometria.html">GEOMETRÍA</a></li>
+
+              <li><a href="./examenes.html">EXÁMENES</a></li>
+
+              <li><a href="./contacto.html">CONTACTO</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header_log">
+        <img class="header_user" src="../assets/img/user.png" alt="" />
+        <ul class="log_menu">
+          <li><a href="./login.html">INICIAR SESIÓN</a></li>
+          <li><a href="./registrarse.html">REGISTRARSE</a></li>
+        </ul>
+        <p class="header_name"></p>
+      </div>
+    </header>
+
+    <main class="examenes_main">
+      <div class="aux_calc">
+        <img class="aux_calc_img" src="../assets/img/calculadora.png" alt="" />
+        <div class="aux_calc_interfaz">
+          <div class="calc_pantalla">0</div>
+          <div class="calc_teclado">
+            <ul class="calc_numeros">
+              <li class="calc_boton boton_numero">0</li>
+              <li class="calc_boton boton_numero">1</li>
+              <li class="calc_boton boton_numero">2</li>
+              <li class="calc_boton boton_numero">3</li>
+              <li class="calc_boton boton_numero">4</li>
+              <li class="calc_boton boton_numero">5</li>
+              <li class="calc_boton boton_numero">6</li>
+              <li class="calc_boton boton_numero">7</li>
+              <li class="calc_boton boton_numero">8</li>
+              <li class="calc_boton boton_numero">9</li>
+              <li class="calc_boton boton_punto">.</li>
+              <li class="calc_boton boton_elevar">^</li>
+            </ul>
+
+            <ul class="calc_operaciones">
+              <li class="calc_boton boton_borrar">DEL</li>
+              <li class="calc_boton boton_reiniciar">AC</li>
+              <li class="calc_boton boton_multiplicar">X</li>
+              <li class="calc_boton boton_dividir">/</li>
+              <li class="calc_boton boton_sumar">+</li>
+              <li class="calc_boton boton_restar">-</li>
+              <li class="calc_boton boton_modulo">%</li>
+              <li class="calc_boton boton_igual">=</li>
+              <li class="calc_boton desbordado boton_sqrt">sqrt</li>
+              <li class="calc_boton desbordado boton_sin">sin</li>
+              <li class="calc_boton desbordado boton_cos">cos</li>
+              <li class="calc_boton desbordado boton_tan">tan</li>
+              <li class="calc_boton desbordado boton_sqr">sqr</li>
+              <li class="calc_boton desbordado boton_asin">asin</li>
+              <li class="calc_boton desbordado boton_acos">acos</li>
+              <li class="calc_boton desbordado boton_atan">atan</li>
+            </ul>
+
+            <ul class="calc_funciones">
+              <li class="calc_funcion calc_boton calc_primo">
+                DESCOMPONER EN PRIMOS
+              </li>
+              <li class="calc_funcion calc_boton calc_raices">
+                CALCULAR RAICES
+              </li>
+              <li>
+                <input class="input_raices x2" type="number" />x^2
+                <input class="input_raices x1" type="number" />x
+                <input class="input_raices x0" type="number" />x^0
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <section class="examenes_section">
+
+        <article class="examenes_container">
+            
+            <h2 class="examenes_title">GEOMETRÍA</h2>
+            <div class="examenes_subcontainer examenes_geometria"></div>
+
+        </article>
+
+        <article class="examenes_container ">
+
+            <h2 class="examenes_title">OPERACIONES</h2>
+            <div class="examenes_subcontainer examenes_operaciones"></div>
+
+        </article>
+
+        <article class="examenes_container">
+
+            <h2 class="examenes_title">ECUACIONES</h2>
+            <div class="examenes_subcontainer examenes_ecuaciones"></div>
+
+        </article>
+      </section>
+
+      <div class="container_blur">
+
+        <div class="hoja_examenes">
+
+          <button class="examen_cerrar">X</button>
+
+          <div class="hoja_preguntas">
+
+          </div>
+
+          <button class="examen_entregar">Entregar</button>
+
+        </div>
+        
+      </div>
+
+
+    </main>
+
+    <footer>
+      <p class="footer_info">
+        © 2022-2023 MATHFAST by Bruno Condenanza || Página de prueba-Curso JS
+        Coderhouse
+      </p>
+      <ul class="footer_lista_redes">
+        <li>
+          <img
+            class="footer_img_redes"
+            src="../assets/img/icons/facebook.png"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            class="footer_img_redes"
+            src="../assets/img/icons/instagram.png"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            class="footer_img_redes"
+            src="../assets/img/icons/whatsapp.png"
+            alt=""
+          />
+        </li>
+      </ul>
+    </footer>
+    <script src="../js/bloquear_pag.js"></script>
+    <script src="../js/examenes.js"></script>
+    <script src="../js/menu.js"></script>
+  </body>
+</html>

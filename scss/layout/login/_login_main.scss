@@ -1,0 +1,60 @@
+.login_main{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.login_formulario{
+    display: grid;
+    justify-items: center;
+    width: 400px;
+    height: 350px;
+    background-color: #bee5bf;
+    box-shadow: #0D160B 0px 0px 10px;
+    p{
+        color:#d58a21
+    }
+    fieldset{
+        height: 300px;
+        width: inherit;
+        display: grid;
+        border:none;
+    }
+}
+.form_element{
+    padding-left: 5px;
+    display: grid;
+    height: 60px;
+    input{
+        justify-self: start;
+        width: 95%;
+        height: 28px;
+        &:focus{
+            color:#d58a21;
+            box-shadow: #d58a21 0px 0px 3px;
+            border:#d58a21 solid;
+            outline: #d58a21;
+        }
+    }
+}
+
+.flecha_form{
+    justify-self: center;
+    width: 65px;
+    height: 65px;
+    &:hover{
+        filter:drop-shadow(0px 0px 7px #d58a21);
+    }
+}
+
+.pconectado{
+    padding-left: 5px;
+    font-size: small;
+}
+
+.log_advertencia{
+    color:red !important;
+    position: absolute;
+    align-self: end;
+    justify-self: center;
+}

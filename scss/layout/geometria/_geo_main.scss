@@ -1,0 +1,180 @@
+.geo_main{
+    background-color:#D5A021;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.geo_container{
+    height:500px;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+
+}
+
+
+.geo_teclado_container{
+    height: 540px;
+    padding: 10px;
+    width: 400px;
+}
+
+.geo_teclado{
+    height: 100%;
+    border: solid #0D160B 1px;
+    box-shadow: 0px 0px 6px #0D160B;
+    background-color: #BEE5BF;
+    border-radius: 5%;
+    padding: 5px;
+    display: grid;
+    justify-items: center;
+}
+
+.geo_teclado_titulo{
+    color:#D5A021;
+}
+
+.geo_teclado_menu{
+    height: 300px;
+    border: double black 5px;
+    width: 340px;
+    padding: 5px;
+}
+
+.geo_submenu{
+    padding-top: 20px;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    display: none;
+}
+
+.geo_submenu_cuadrado{
+    display: grid;
+}
+
+
+.t_submenu{
+    display: none;
+    row-gap: 10px;
+}
+
+.submenu_tequilatero{
+    display: grid;
+}
+
+.geo_teclado_botones{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+.geo_boton{ 
+    font-family: Anton;
+    box-shadow: 0px 0px 3px #0D160B;
+    background-color: #6C91C2;
+    border-radius: 8px;
+    border-color: rgb(224, 136, 30);
+    &:hover{
+        color:#D5A021;
+        cursor: pointer;
+    }
+  
+}
+
+.geo_pantalla_container{
+    height: 460px;
+    padding: 20px;
+}
+
+.geo_pantalla{
+    height: inherit;
+    width: 800px;
+    border: solid #0D160B 1px;
+    box-shadow: 0px 0px 3px #0D160B;
+    background-color: rgb(243, 233, 219);
+}
+
+.geo_fig_creadas{
+    border: solid black 3px;
+    list-style: none;
+    height: 115px;
+    width: 300px;
+    display: flex;
+    flex-wrap:nowrap;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    &::-webkit-scrollbar {
+        height: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(25, 140, 222, 0.623);
+        border-radius: 20px;
+        border: 1px solid rgb(221, 148, 11);
+    }
+      
+}
+
+.repFiguraContainer{
+   height:110px;
+   width: 70px;
+    border:solid black 2px;
+    border-radius: 8%;
+    display:grid;
+    grid-template-areas:
+    "bInfo bBorrar"
+    "rep rep";
+    justify-items: center;
+    align-items: center;
+    background:rgb(243, 233, 219);
+    &:hover{
+       box-shadow:0px 0px 10px #D5A021;
+       background:#D5A021;
+    }
+    padding-bottom: 5px;
+}
+
+.boton_info{
+    grid-area:bInfo;
+    justify-self: start;
+    width: 20px;
+    height: 25px;
+    border-radius: 20%;
+    background:#6C91C2;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        background-color: #33bf17;
+        cursor: pointer;
+    }
+}
+
+.boton_borrarFig{
+    grid-area:bBorrar;
+    justify-self: end;
+    width: 20px;
+    height: 25px;
+    border-radius: 20%;
+    background:#6C91C2;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        background-color: rgb(244, 81,81);
+        cursor: pointer;
+    }
+}
+
+.segundoContainer{
+    grid-area:rep;
+    width:60px;
+    height:60px;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+}
