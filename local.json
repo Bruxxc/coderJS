@@ -1,0 +1,43 @@
+[
+    {
+        "nombre":"GEO 1",
+        "tipo":"Geometría",
+        "num":1,
+        "preguntas":[{"pregunta":"¿Cuál es el área de un cuadrado de 4 de lado?","opcion1":12,"opcion2":10,"opcion3":18,"opcion4":16,"respuesta":"d","num":1,"tipo":"MO"},{"pregunta":"Calcule el área de un triángulo equilátero de 6 de lado","respuesta":15.6,"num":2,"tipo":"R"},{"pregunta":"Calcule el perímetro de un rectángulo de base=16 y altura=10","respuesta":52,"num":3,"tipo":"R"},{"pregunta":"¿Cómo se llama el lado de mayor longitud de un triángulo rectángulo?","opcion1":"lado adyacente","opcion2":"lado opuesto","opcion3":"hipotenusa","opcion4":"hipotensia","respuesta":"c","num":4,"tipo":"MO"},{"pregunta":"En un triángulo rectángulo se conocen la medida de la hipotenusa:5 y de uno de sus lados:3. ¿Cuál es la medida del lado restante?","opcion1":2,"opcion2":3,"opcion3":4,"opcion4":5,"respuesta":"c","num":5,"tipo":"MO"},{"pregunta":"¿Cuál es el área de un círculo de 5.5 de radio?","opcion1":17.3,"opcion2":16.5,"opcion3":17.9,"opcion4":15.7,"respuesta":"a","num":6,"tipo":"MO"},{"pregunta":"Los ángulos obtusos son los que miden más de 90°","respuesta":"V","num":7,"tipo":"VoF"}]
+    },
+
+    {
+        "nombre":"Operaciones y Razonamiento 1",
+        "tipo":"Operaciones",
+        "num":2,
+        "preguntas":[{"pregunta":"¿Cuál es el resultado de: (2*3*4*5-4+7)/3?","respuesta":41,"num":1,"tipo":"R"},{"pregunta":"¿Cuál es el resultado de ((2^3)^2)/(2^4)?","respuesta":4,"num":2,"tipo":"R"},{"pregunta":"De los 45 estudiantes que fueron de excursion, 22 visitaron el Museo de Ciencias, 8 el Museo de Bellas Artes y 12 fueron al Acuario. Si ningún estuiante visitó más de un lugar,¿cuántos estudiantes no visitaron ninguno?","respuesta":3,"num":3,"tipo":"R"},{"pregunta":"Las manzanas cuestan $5.9 el kg y las uvas cuestan $8.9 el kg; Si tienes $74.0 y quieres comprar la misma cantidad de kg de cada fruta,¿Cuántos kg de cada fruta puedes comprar como máximo con ese dinero?","respuesta":5,"num":4,"tipo":"R"},{"pregunta":"Supón que cada día un murciélago come el doble de mosquitos que comió el día anterior más 1; Si hoy comió 10 mosquitos y es el primer día de la semana,¿Cuántos mosquitos habrá comido en total al finalizar la semana?","opcion1":1200,"opcion2":1270,"opcion3":1390,"opcion4":1420,"respuesta":"c","num":5,"tipo":"MO"},{"pregunta":"Un automovil tarda 8 horas en recorrer una distancia yendo a 90 km/h ¿Cuántas horas tardará en recorrer la misma distancia yendo a 60 km/h?","opcion1":10,"opcion2":12,"opcion3":6,"opcion4":14,"respuesta":"b","num":6,"tipo":"MO"}]
+    },
+
+    {
+        "nombre":"EC 1",
+        "tipo":"Ecuaciones",
+        "num":3,
+        "preguntas":[{"pregunta":"Considerando la igualdad: 7x+3=9x-3 ;  Hallar el valor de X para el cual la igualdad se cumple ","respuesta":3,"num":1,"tipo":"R"},{"pregunta":"Hallar las raices de la siguiente función: f(x)=x^2-x-2","opcion1":"1 y 2","opcion2":"-1 y 2","opcion3":"1 y -1","opcion4":"-2 y 1","respuesta":"b","num":2,"tipo":"MO"},{"pregunta":"Considerando la siguiente función: g(x)=(9x^2 - 1)/(x^2 -x -2) ; Hallar el dominio de g(x)","opcion1":"R","opcion2":"(-inf,-1) U (2,+inf)","opcion3":"(-inf,-1) U (-1,2) U (2,+inf)","opcion4":"(-inf,-1) U (-1,+inf)","respuesta":"c","num":3,"tipo":"MO"},{"pregunta":"¿Cuántas raices tiene la siguiente funcion? : x^3 + x^2 - 2 ","opcion1":0,"opcion2":1,"opcion3":2,"opcion4":3,"respuesta":"b","num":4,"tipo":"MO"},{"pregunta":"Un juego de cartas consiste en sacar 10 cartas del mazo. La cantidad de puntos obtenidos depende de la cantidad de cartas del mismo palo, sumando puntos solo por el palo con mayor cantidad de cartas repetidas. Si al sacar 4 cartas repetidas se obtienen 6 puntos; al sacar 5 se obtienen 13 y al sacar 7 se obtienen 33; ¿Cuál de las siguientes funciones es la que mejor se ajusta al cálculo de los puntos?","opcion1":"7x^2-5x+4","opcion2":"13x^2-6x+33","opcion3":"4x+6","opcion4":"x^2-2x-2","respuesta":"d","num":5,"tipo":"MO"}]
+    },
+
+    {
+        "nombre":"GEO 2",
+        "tipo":"Geometría",
+        "num":4,
+        "preguntas":[{"pregunta":"¿Cuántos grados en total suman los ángulos de un triángulo?","respuesta":180,"num":1,"tipo":"R"},{"pregunta":"¿Cuántos vértices tiene un cubo?","opcion1":"4","opcion2":"6","opcion3":"8","opcion4":"16","respuesta":"c","num":2,"tipo":"MO"},{"pregunta":"¿Cuántas aristas tiene una pirámide de base cuadrada?","opcion1":"12","opcion2":"9","opcion3":"16","opcion4":"8","respuesta":"d","num":3,"tipo":"MO"},{"pregunta":"Un paralelogramo es un cuadrilátero cuyos lados son todos paralelos","respuesta":"F","num":4,"tipo":"VoF"},{"pregunta":"Un triángulo equilátero puede ser también rectángulo","respuesta":"F","num":5,"tipo":"VoF"},{"pregunta":"Un triángulo equilátero no es isósceles","respuesta":"F","num":6,"tipo":"VoF"}]
+    },
+
+    {
+        "nombre":"EC 2",
+        "tipo":"Ecuaciones",
+        "num":5,
+        "preguntas":[{"pregunta":"Considerando la igualdad: 9x+3=9x-3 ;  ¿Para qué valor/es de X se cumple la igualdad? ","opcion1":"0","opcion2":"3","opcion3":"-3","opcion4":"Para ninguno","respuesta":"c","num":1,"tipo":"MO"},{"pregunta":"Considerando la igualdad: 5x^2+6x^2-6x-7+19=11x^2-6x+12 ;  ¿Para qué valor/es de X se cumple la igualdad? ","opcion1":"0","opcion2":"para ninguno","opcion3":"para todos","opcion4":"11","respuesta":"c","num":2,"tipo":"MO"},{"pregunta":"El perimetro de un círculo es de 75.4, calcule su radio","respuesta":"c","num":3,"tipo":"R"},{"pregunta":"¿Cuántas raices tiene la siguiente funcion? : x^3 + x^2 - 2 ","opcion1":0,"opcion2":1,"opcion3":2,"opcion4":3,"respuesta":"b","num":4,"tipo":"MO"},{"pregunta":"La cantidad de raices de una ecuación siempre es igual al exponente de su término de mayor grado","respuesta":"F","num":5,"tipo":"VoF"}]
+    },
+
+    {
+        "nombre":"Operaciones y Razonamiento 2",
+        "tipo":"Operaciones",
+        "num":6,
+        "preguntas":[{"pregunta":"Un grupo de 8 estudiantes debe pagar $ 20.000 para ir a un paseo, pero algunos de ellos no pueden pagarlo y los otros estudiantes deciden ayudarles a pagar la cuota, para eso, cada uno tendrá que pagar $1.500 adicionales. ¿Cuántos estudiantes no pudieron pagar?","respuesta":3,"num":1,"tipo":"R"},{"pregunta":"Jorge tiene una tienda de jarrones, tenía 56 nuevos diseños, de los cuales vendió 13, y expuso en la vitrina 6. ¿Cuántos jarrones tiene aún guardados en la tienda?","opcion1":"56","opcion2":"43","opcion3":"47","opcion4":"37","respuesta":"d","num":2,"tipo":"MO"},{"pregunta":"Considerando la siguiente serie: 3,7,15,31; ¿Cuál es el siguiente número de la serie?","respuesta":63,"num":3,"tipo":"R"}]
+    }
+]

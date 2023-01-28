@@ -63,12 +63,12 @@ function login(){
             }
 
             else{
-                logAdvertencia.innerText="Contraseña incorrecta";
+                logAdvertencia.innerText="Usuario y/o contraseña incorrectos";
             }
         }
 
         else{
-            logAdvertencia.innerText="Ese usuario no ha sido registrado";
+            logAdvertencia.innerText="Usuario y/o contraseña incorrectos";
         }
     }
 }

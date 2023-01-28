@@ -170,7 +170,8 @@ footer {
     filter: drop-shadow(0px 0px 3px #D5A021); }
 
 main {
-  min-height: 100vh; }
+  min-height: 100vh;
+  background-image: url(../assets/img/fondo.png); }
 
 .login_main {
   display: grid;
@@ -296,7 +297,7 @@ main {
   width: 280px;
   height: 250px;
   display: grid;
-  grid-template-areas: "numeros operaciones" "funciones funciones";
+  grid-template-areas: "numeros operaciones" "funciones funciones";
   justify-items: center;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -457,7 +458,7 @@ main {
   border: solid black 2px;
   border-radius: 8%;
   display: grid;
-  grid-template-areas: "bInfo bBorrar" "rep rep";
+  grid-template-areas: "bInfo bBorrar" "rep rep";
   justify-items: center;
   align-items: center;
   background: #f3e9db;
@@ -629,6 +630,96 @@ main {
   display: grid; }
   .pregunta_respuesta_texto input {
     justify-self: center; }
+
+.index_section {
+  display: grid;
+  height: 600px;
+  width: 100%;
+  justify-items: center;
+  text-align: center; }
+  .index_section h1 {
+    color: #D5A021;
+    font-size: xx-large; }
+
+.section_nosotros {
+  width: 100%; }
+
+.section_tag {
+  width: 100%;
+  background-color: rgba(202, 52, 52, 0.845);
+  height: 120px;
+  display: grid;
+  align-items: center;
+  color: aliceblue;
+  box-shadow: 0px 0px 5px black; }
+
+.section_beneficios {
+  width: 100%; }
+  .section_beneficios ul li {
+    color: aliceblue; }
+
+.section_destacado {
+  color: #D5A021; }
+
+.contacto_main {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 5fr 4fr;
+  padding: 20px;
+  column-gap: 30px; }
+
+.contacto_form {
+  width: 500px;
+  height: 450px;
+  box-shadow: 0px 0px 3px black;
+  display: grid;
+  justify-self: end;
+  justify-items: center;
+  background-color: #f45151; }
+  .contacto_form h2 {
+    color: #D5A021; }
+  .contacto_form fieldset {
+    display: grid;
+    justify-content: center;
+    border: none; }
+    .contacto_form fieldset label {
+      width: 450px;
+      color: #ede7d9; }
+      .contacto_form fieldset label input {
+        width: 100%;
+        height: 30px; }
+        .contacto_form fieldset label input:focus {
+          color: #d58a21;
+          box-shadow: #d58a21 0px 0px 3px;
+          border: #d58a21 solid;
+          outline: #d58a21; }
+    .contacto_form fieldset textarea {
+      width: 100%; }
+
+.form_dato {
+  height: 50px;
+  width: 300px; }
+
+.contacto_escribenos {
+  display: grid;
+  justify-self: start;
+  justify-items: center;
+  color: #ede7d9;
+  background-color: #f45151;
+  box-shadow: 0px 0px 4px black; }
+  .contacto_escribenos h1 {
+    color: #D5A021; }
+
+.boton_enviarmsj {
+  background-color: #D5A021;
+  border-radius: 10%;
+  border: none;
+  color: #ede7d9;
+  font-family: Anton;
+  width: 100px; }
+  .boton_enviarmsj:hover {
+    cursor: pointer;
+    background-color: #0c7b10; }
 
 /*MEDIAS*/
 @media (max-width: 740px) {

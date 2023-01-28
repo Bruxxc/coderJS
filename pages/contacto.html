@@ -67,8 +67,25 @@
     </header>
 
     
-    <main>
-        <p>PROXIMAMENTE</p>
+    <main class="contacto_main">
+        <form class="contacto_form">
+            <h2>CONTACTO</h2>
+            <fieldset>
+                <label class="form_dato"><input type="email" placeholder="Email" class="form_email"></label>
+                <label class="form_dato"> <input type="text" placeholder="Nombre" class="form_nombre"></label>
+                <label class="form_dato"><input type="text" placeholder="Asunto" class="form_asunto"></label>
+                <label><textarea cols="50" rows="10" placeholder="Mensaje" class="form_mensaje"></textarea></label>
+            </fieldset>
+            <p class="form_alerta"></p>
+            <button class="boton_enviarmsj">ENVIAR</button>
+        </form>
+        <div class="contacto_escribenos">
+            <h2> <span class="section_destacado">+</span> ¿Problemas con los ejercicios?    </h2>
+            <h2> <span class="section_destacado">+</span> ¿Dudas sobre algún tema?</h2>
+            <h2> <span class="section_destacado">+</span> ¿Quieres saber algo en particular?</h2>
+            <h2> <span class="section_destacado">+</span> ¿Te gustaría trabajar con nosotros?</h2>
+            <h1>¡ESCRÍBENOS!</h1>
+        </div>
     </main>
 
 
@@ -81,6 +98,18 @@
             <li><img class="footer_img_redes" src="../assets/img/icons/whatsapp.png" alt=""></li>
         </ul>
     </footer>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+        emailjs.init("OjnPwePadqxug51w1");
+        })();
+    </script>
     <script src="../js/menu.js"></script>
+    <script src="../js/contacto.js"></script>
+
 </body>
 </html>
