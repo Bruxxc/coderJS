@@ -426,7 +426,12 @@ main {
 
 .geo_pantalla_container {
   height: 460px;
-  padding: 20px; }
+  padding-left: 20px;
+  padding-right: 20px; }
+  .geo_pantalla_container h2 {
+    color: #ede5d9;
+    text-shadow: 0px 0px 3px #000000;
+    text-align: center; }
 
 .geo_pantalla {
   height: inherit;
@@ -580,9 +585,10 @@ main {
 .hoja_examenes {
   width: 500px;
   height: 550px;
+  position: fixed;
   border: solid black 1px;
   justify-self: center;
-  align-self: center;
+  align-self: start;
   background-color: #bee5bf;
   box-shadow: 0px 0px 5px #0D160B;
   display: grid;
@@ -639,7 +645,8 @@ main {
   text-align: center; }
   .index_section h1 {
     color: #D5A021;
-    font-size: xx-large; }
+    font-size: xx-large;
+    text-shadow: 0px 0px 3px black; }
 
 .section_nosotros {
   width: 100%; }
@@ -655,8 +662,21 @@ main {
 
 .section_beneficios {
   width: 100%; }
-  .section_beneficios ul li {
-    color: aliceblue; }
+  .section_beneficios ul {
+    display: grid;
+    align-items: center;
+    height: 200px;
+    grid-template-columns: repeat(4, 1fr); }
+    .section_beneficios ul li {
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      color: aliceblue;
+      border-right: solid 3px #ede5d9;
+      height: 200px; }
+      .section_beneficios ul li img {
+        width: 60px;
+        height: 60px; }
 
 .section_destacado {
   color: #D5A021; }
@@ -704,6 +724,7 @@ main {
   display: grid;
   justify-self: start;
   justify-items: center;
+  width: 400px;
   color: #ede7d9;
   background-color: #f45151;
   box-shadow: 0px 0px 4px black; }
@@ -773,3 +794,116 @@ main {
     height: 30px; }
   .footer_info {
     font-size: 9px; } }
+
+@media (max-width: 460px) {
+  .section_tag {
+    font-size: 14px;
+    height: 175px; } }
+
+@media (max-width: 375px) {
+  .index_main {
+    height: 900px; }
+  .section_beneficios {
+    height: 600px; }
+    .section_beneficios ul {
+      height: 600px;
+      grid-template-columns: 1fr; }
+      .section_beneficios ul li {
+        height: 150px;
+        width: 100%;
+        border-right: none;
+        border-top: 3px solid #ede5d9; }
+  .ben_calc {
+    border-top: none !important; } }
+
+@media (max-width: 305px) {
+  .index_main {
+    height: 950px; } }
+
+@media (max-width: 420px) {
+  .login_formulario {
+    width: 100%; }
+  .login_main {
+    min-height: 480px; } }
+
+@media (max-width: 420px) {
+  .registrarse_formulario {
+    width: 100%; }
+  .registrarse_main {
+    min-height: 480px; } }
+
+@media (max-width: 980px) {
+  .contacto_main {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-template-areas: "escribenos" "form";
+    row-gap: 20px;
+    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .contacto_form {
+    grid-area: form;
+    justify-self: center;
+    width: 600px; }
+  .contacto_escribenos {
+    grid-area: escribenos;
+    justify-self: center; } }
+
+@media (max-width: 620px) {
+  .contacto_form {
+    width: 100%; }
+    .contacto_form fieldset {
+      width: 100%; }
+      .contacto_form fieldset label {
+        width: 450px; } }
+
+@media (max-width: 490px) {
+  .contacto_escribenos {
+    width: 100%; }
+  .contacto_form fieldset label {
+    width: 350px; } }
+
+@media (max-width: 390px) {
+  .contacto_escribenos {
+    font-size: 14px; }
+  .contacto_form fieldset label {
+    width: 300px; } }
+
+@media (max-width: 390px) {
+  .contacto_escribenos {
+    font-size: 12.5px;
+    text-align: center; }
+  .contacto_form fieldset label {
+    width: 270px; } }
+
+@media (max-width: 295px) {
+  .contacto_form fieldset label {
+    width: 240px; } }
+
+@media (max-width: 930px) {
+  .examenes_section {
+    padding: 20px;
+    grid-template-columns: 1fr;
+    row-gap: 20px; }
+  .examenes_container {
+    width: 90%; }
+  .examenes_subcontainer {
+    width: 90%; }
+  .examen {
+    width: 100%; } }
+
+@media (max-width: 520px) {
+  .hoja_examenes {
+    width: 100%;
+    height: 450px; }
+  .hoja_preguntas {
+    height: 350px; } }
+
+@media (max-width: 490px) {
+  .hoja_preguntas {
+    width: 90%;
+    font-size: 14px; } }
+
+@media (max-width: 390px) {
+  .examenes_title {
+    font-size: 19px; } }

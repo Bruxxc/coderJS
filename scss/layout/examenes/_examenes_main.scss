@@ -93,9 +93,10 @@
 .hoja_examenes{
     width: 500px;
     height: 550px;
+    position:fixed;
     border:solid black 1px;
     justify-self: center;
-    align-self: center;
+    align-self: start;
     background-color: #bee5bf;
     box-shadow: 0px 0px 5px #0D160B;
     display: grid;

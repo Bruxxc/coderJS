@@ -1,0 +1,92 @@
+@media (max-width:980px){
+    .contacto_main{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        grid-template-areas: 
+        "escribenos"
+        "form";
+
+        row-gap: 20px;
+        padding: 0px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .contacto_form{
+        grid-area:form;
+        justify-self: center;
+        width: 600px
+    }
+    .contacto_escribenos{
+        grid-area:escribenos;
+        justify-self: center;
+    }
+
+
+}
+
+
+@media (max-width:620px){
+    .contacto_form{
+        width: 100%;
+        fieldset{
+            width: 100%;
+            label{
+                width: 450px;
+            }
+        }
+    }
+}
+
+@media (max-width:490px){
+    .contacto_escribenos{
+        width: 100%;
+    }
+    .contacto_form{
+        fieldset{
+            label{
+                width: 350px;
+            }
+        }
+    }
+}
+
+@media (max-width:390px){
+    .contacto_escribenos{
+        font-size: 14px;
+    }
+
+    .contacto_form{
+        fieldset{
+            label{
+                width: 300px;
+            }
+        }
+    }
+}
+
+
+@media (max-width:390px){
+    .contacto_escribenos{
+        font-size: 12.5px;
+        text-align: center;
+    }
+
+    .contacto_form{
+        fieldset{
+            label{
+                width: 270px;
+            }
+        }
+    }
+}
+
+@media (max-width:295px){
+    .contacto_form{
+        fieldset{
+            label{
+                width: 240px;
+            }
+        }
+    }
+}

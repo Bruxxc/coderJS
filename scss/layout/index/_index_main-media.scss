@@ -1,0 +1,38 @@
+
+@media (max-width:460px){
+    .section_tag{
+        font-size: 14px;
+        height: 175px;
+    }
+    
+    
+}   
+
+
+@media (max-width:375px){
+    .index_main{
+        height: 900px;
+    }
+    .section_beneficios{
+        height: 600px;
+        ul{
+            height: 600px;
+            li{
+                height: 150px;
+                width: 100%;
+                border-right: none;
+                border-top: 3px solid #ede5d9;
+            }
+        grid-template-columns: 1fr;
+        }
+    }
+    .ben_calc{
+        border-top: none !important;
+    }
+}
+
+@media (max-width:305px){
+    .index_main{
+        height: 950px;
+    }
+}

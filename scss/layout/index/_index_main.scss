@@ -7,7 +7,10 @@
     h1{
         color:#D5A021;
         font-size: xx-large;
+        text-shadow: 0px 0px 3px black;
     }
+
+
 }
 
 
@@ -29,8 +32,21 @@
 .section_beneficios{
     width: 100%;
     ul{
+        display: grid;
+        align-items: center;
+        height: 200px;
+        grid-template-columns: repeat(4,1fr);
         li{
+            display: grid;
+            align-items: center;
+            justify-items: center;
             color:aliceblue;
+            border-right: solid 3px #ede5d9;
+            height: 200px;
+            img{
+                width: 60px;
+                height: 60px;
+            }
         }
     }    
 }
