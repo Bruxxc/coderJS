@@ -800,9 +800,10 @@ main {
     font-size: 14px;
     height: 175px; } }
 
-@media (max-width: 375px) {
-  .index_main {
-    height: 900px; }
+@media (max-width: 390px) {
+  .index_section {
+    height: 1050px;
+    row-gap: 30px; }
   .section_beneficios {
     height: 600px; }
     .section_beneficios ul {
@@ -818,7 +819,7 @@ main {
 
 @media (max-width: 305px) {
   .index_main {
-    height: 950px; } }
+    height: 1100px; } }
 
 @media (max-width: 420px) {
   .login_formulario {
@@ -907,3 +908,61 @@ main {
 @media (max-width: 390px) {
   .examenes_title {
     font-size: 19px; } }
+
+@media (max-width: 1300px) {
+  .geo_pantalla {
+    width: 600px; } }
+
+@media (max-width: 1100px) {
+  .geo_pantalla {
+    width: 565px; }
+  .geo_teclado_container {
+    width: 380px; } }
+
+@media (max-width: 1000px) {
+  .geo_main {
+    min-height: 1100px; }
+  .geo_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "pantalla" "teclado";
+    row-gap: 50px;
+    align-self: start;
+    padding-top: 30px; }
+  .geo_pantalla {
+    width: 700px; }
+  .geo_teclado_container {
+    width: 600px;
+    grid-area: teclado;
+    justify-self: center; }
+  .geo_pantalla_container {
+    grid-area: pantalla;
+    justify-self: center; } }
+
+@media (max-width: 760px) {
+  .geo_pantalla_container {
+    width: 100%;
+    display: grid;
+    justify-items: center; }
+  .geo_pantalla {
+    width: 100%; } }
+
+@media (max-width: 660px) {
+  .geo_main {
+    min-height: 1300px; }
+  .geo_pantalla_container {
+    height: fit-content; }
+  .geo_pantalla {
+    height: 600px; }
+  .geo_teclado_container {
+    width: 100%; } }
+
+@media (max-width: 390px) {
+  .geo_teclado {
+    width: 100%; }
+  .geo_teclado_menu {
+    width: 100%; }
+  .geo_fig_creadas {
+    width: 100%; }
+  .geo_pantalla {
+    height: 500px; } }

@@ -9,9 +9,10 @@
 }   
 
 
-@media (max-width:375px){
-    .index_main{
-        height: 900px;
+@media (max-width:390px){
+    .index_section{
+        height: 1050px;
+        row-gap: 30px;
     }
     .section_beneficios{
         height: 600px;
@@ -31,8 +32,9 @@
     }
 }
 
+
 @media (max-width:305px){
     .index_main{
-        height: 950px;
+        height: 1100px;
     }
 }
